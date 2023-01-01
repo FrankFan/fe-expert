@@ -1,0 +1,20 @@
+.frame {
+  box-sizing: border-box;
+  border: none;
+  background-image: linear-gradient(to right, rgba(30, 228, 157, 1), rgba(30, 228, 157, 0));
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+}
+
+.frame:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  z-index: -1;
+  background: #202030;
+  border-radius: 8px;
+}

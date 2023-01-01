@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'IBM Plex Sans Bold';
+  font-display: fallback;
+  src: url('./fonts/IBMPlexSans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans';
+  font-display: fallback;
+  src: url('./fonts/IBMPlexSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

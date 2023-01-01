@@ -1,0 +1,75 @@
+/* 通用的adm css模块化*/
+
+/* css tab样式重写 */
+.tab :global .adm-tabs-tab-line {
+  --fixed-active-line-width: 24px;
+}
+.tab :global .adm-tabs-header {
+  border-bottom: none;
+}
+
+.tab :global .adm-tabs-tab {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.tab :global .adm-tabs-tab-wrapper-stretch {
+  flex: none;
+}
+.tab :global .adm-tabs-tab-wrapper {
+  padding: 0;
+}
+
+.tab :global .adm-tabs-tab-wrapper:not(:nth-child(2)) {
+  margin-left: 50px;
+}
+
+.tab :global .adm-tabs-content {
+  padding: 16px 0;
+}
+
+/* css Popup样式重写 */
+.popBody :global .adm-input {
+  height: 36px;
+  background: rgba(116, 116, 128, 0.12);
+  border-radius: 4px;
+  padding: 12px;
+  --color: var(--color-gray-600);
+  --placeholder-color: var(--color-gray-600);
+  --font-size: 14px;
+}
+
+/* dialog 取消按钮 */
+.cancelBtns {
+  color: var(--color-gray-900);
+}
+/* input */
+.input {
+  height: 36px;
+  background: var(--bg-gray-input);
+  border-radius: 8px;
+  padding: 12px;
+  --color: var(--color-gray-600);
+  --placeholder-color: var(--color-gray-600);
+  --font-size: 14px;
+}
+
+/* switch */
+.switch :global .adm-switch-checkbox:before {
+  background: var(--color-gray-600);
+}
+.switch :global .adm-switch-checkbox {
+  background: var(--color-gray-600);
+}
+
+.switch {
+  --checked-color: var(--color-brand);
+  --height: 24px;
+  --width: 42px;
+  margin-left: 8px;
+}
+
+/* divide */
+.divide {
+  border-color: var(--color-gray-200);
+}

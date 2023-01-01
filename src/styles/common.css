@@ -1,0 +1,80 @@
+@import '@/assets/font.scss';
+
+/* 覆盖adm的全局变量 */
+html,
+body {
+  --adm-color-primary: var(--color-brand);
+  --adm-border-color: var(--bg-gray-card); /* #2e2d37picker的区分线颜色 */
+  --adm-color-text: var(--color-gray-900);
+  --adm-font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', Roboto, Arial,
+    sans-serif;
+}
+
+/* picker 样式重写 */
+.adm-picker-view-mask,
+.adm-picker-view-mask-top,
+.adm-picker-view-mask-bottom {
+  background: var(--bg-gray-area) !important;
+}
+.adm-picker-view-column {
+  color: var(--color-brand);
+  z-index: 1;
+}
+
+/* dialog 样式重写 */
+.adm-dialog-wrap {
+  width: 296px !important;
+}
+.adm-dialog-body {
+  background: var(--bg-gray-area) !important;
+}
+
+.adm-dialog-body {
+  background: var(--bg-gray-area) !important;
+}
+.adm-auto-center-content {
+  color: var(--color-gray-900) !important;
+}
+.adm-dialog-content {
+  display: flex;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.65) !important;
+}
+/* dialog-confirm */
+.adm-dialog-content-empty {
+  color: var(--color-gray-200) !important;
+}
+.adm-dialog-title {
+  font-size: 14px !important;
+}
+.adm-dialog-button {
+  font-size: 14px !important;
+}
+.adm-dialog-button-bold {
+  --adm-color-primary: var(--color-brand);
+}
+.adm-dialog-action-row {
+  --adm-border-color: var(--color-gray-200);
+}
+
+/* button 通用 */
+/* .adm-button {
+  --border-radius: 8px;
+} */
+
+.adm-auto-center-content {
+  /* 不能这样设值，会导致"根据单词换行、提示不连贯"的问题 */
+  word-break: break-word;
+}
+
+:root:root {
+  /* 品牌色 */
+  --brand: #56faa5;
+  --grey800: #d7dce0;
+
+  --adm-font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', Roboto, Arial,
+    sans-serif;
+
+  font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', Roboto, Arial,
+    sans-serif;
+}
