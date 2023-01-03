@@ -8,6 +8,8 @@ body {
   --adm-color-text: var(--color-gray-900);
   --adm-font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', Roboto, Arial,
     sans-serif;
+  color: rgba(0, 0, 0, 0.85);
+  font-size: 14px;
 }
 
 /* picker 样式重写 */
@@ -77,4 +79,29 @@ body {
 
   font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', Roboto, Arial,
     sans-serif;
+}
+
+:root {
+  --title-color: #1ab5fe;
+}
+
+.App {
+  font-family: 'IBM Plex Sans';
+  background-color: #f7f8fa;
+  height: 100vh;
+}
+
+.truncate {
+  /* width: 135px; */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.pb30 {
+  padding-bottom: 30px;
+}
+
+.container {
+  padding: 30px;
 }

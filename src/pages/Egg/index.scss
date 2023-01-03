@@ -1,0 +1,53 @@
+.egg {
+  &-head {
+    font-size: 24px;
+    // color: #56faa5;
+    text-align: center;
+  }
+  &-body {
+    text-align: center;
+    padding-top: 30px;
+    nav {
+      a {
+        display: block;
+        font-size: 16px;
+        line-height: 2.5;
+        color: #56faa5;
+      }
+    }
+  }
+  &-foot {
+    padding-bottom: 30px;
+    .test-block {
+      margin-bottom: 20px;
+      div {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.border-radius-3 {
+  margin-left: 20px;
+  width: 160px;
+  height: 60px;
+  border: none;
+  background-image: linear-gradient(to right, rgba(30, 228, 157, 1), rgba(30, 228, 157, 0));
+  border-radius: 8px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 1px;
+  padding: 10px;
+}
+.border-radius-3:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  z-index: -1;
+  background: #202030;
+  border-radius: 8px;
+}

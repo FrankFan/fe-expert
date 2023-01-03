@@ -1,31 +1,21 @@
-import '@/styles/common.css' //覆盖
-import '@/styles/globals.scss' //全局的css
+import '@/styles/common.css' // 全局css
 import 'antd-mobile/es/global'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import BlankLayout from './layouts/BlankLayout'
-import ProviderLayout from './layouts/ProviderLayout'
-import Home from './pages/Home/'
-// import { LandingPage } from './pages/LandingPage'
-// import MyPredict from './pages/MyPredict'
-// import Predict from './pages/Predict'
-// import PreOrder from './pages/PreOrder'
-// import SharePage from './pages/SharePage'
 import './styles/normalize.css'
+import { routes } from '@/routes'
+import { Header } from './components/Header'
 
 function App() {
   return (
     <div className='App'>
       <BrowserRouter basename='/'>
+        <Header />
         <Routes>
-          {/* <Route path='/' element={<ProviderLayout />}>
-            <Route path='/' element={<LandingPage />} />
-            <Route path='predict' element={<Predict />} />
-            <Route path='preorder' element={<PreOrder />} />
-            <Route path='myPredict' element={<MyPredict />} />
-          </Route> */}
-
           <Route path='/' element={<BlankLayout />}>
-            <Route path='egg' element={<Home />} />
+            {routes.map(({ path, component: Component }) => (
+              <Route key={path} path={path} element={<Component />} />
+            ))}
           </Route>
         </Routes>
       </BrowserRouter>
